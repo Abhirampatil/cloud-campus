@@ -1,4 +1,13 @@
 .env
 venv/
+.env/
 __pycache__/
-uploads/*
+*.pyc
+*.pyo
+*.db
+*.sqlite3
+uploads/
+instance/
+.DS_Store
+Thumbs.db
+.vscode/

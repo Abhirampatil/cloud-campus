@@ -10,7 +10,7 @@ from datetime import datetime
 import uuid
 
 app = Flask(__name__) 
-app.config['SECRET_KEY'] = os.environ.get('SECRET_KEY', 'dev-secret-key-change-in-production')
+app.config['SECRET_KEY'] = os.environ['SECRET_KEY']
 # app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'postgresql://user:password@localhost/cloudcampus') commented out for sql lite the line for sql lite is below
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('DATABASE_URL', 'sqlite:///cloudcampus.db')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
@@ -290,5 +290,5 @@ def profile():
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-    app.run(debug=True)
+    app.run
 

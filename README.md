@@ -49,7 +49,7 @@ Database
 ```
 cloud-campus/
 │
-├── Frontend/
+├── templates/
 │   ├── base.html
 │   ├── index.html
 │   ├── browse.html
